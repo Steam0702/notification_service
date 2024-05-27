@@ -1,4 +1,4 @@
-FROM adoptopenjdk:17-jre-hotspot
+FROM openjdk:17-slim
 EXPOSE 8080
 ARG JAR_FILE="*.jar"
 ADD ${JAR_FILE} notification_service.jar
